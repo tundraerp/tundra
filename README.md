@@ -1456,7 +1456,7 @@ TundraERP provides three installation options:
   - Run ```git clone {TUNDRAERP_CLONE_URL}``` into a folder where you would like to install TundraERP's System
   - Run npm i && npm i periodicjs.ext.passport --save && npm i periodicjs.ext.oauth2server@10.5.21 --save at the directory root level
 
-> **Note** If you do not have database configurations set up, you will see mongoDB connection errors in the logs, but the dependencies will still install properly
+> **Note**: If you do not have database configurations set up, you will see mongoDB connection errors in the logs, but the dependencies will still install properly
 
 ### Forking our Repository
   - To fork TundraERP into your organization's repository, navigate to our GitHub repository (https://github.com/tundraerp/tundra) and click ```Fork``` at the top right. This will redirect you to a forked version of the TundraERP System

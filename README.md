@@ -29,7 +29,7 @@ The following 3rd-party software is required to run TundraERP.
 | Amazon SES      | Amazon SES enables programmatic email sending. For more information visit https://aws.amazon.com/ses/. | **Optional** Required for system emails. |
 | Amazon Sagemaker   | Amazon SageMaker is a fully-managed service that covers the entire machine learning workflow to label and prepare your data, choose an algorithm, train the model, tune and optimize it for deployment, make predictions, and take action. For more information visit https://aws.amazon.com/sagemaker/. | **Optional** Amazon Machine Learning is required to use some of Tundra's machine learning capabilities. |
 | Amazon ML       | Amazon Machine Learning (Amazon ML) is a robust, cloud-based service that makes it easy for developers of all skill levels to use machine learning technology. For more information visit https://aws.amazon.com/machine-learning/ | **Optional** Amazon Machine Learning is required to use some of Tundra's machine learning capabilities. |
-
+| Google Cloud Vision  | Google Cloud offers computer vision products that use machine learning to help you understand your images with industry-leading prediction accuracy. For more information visit https://cloud.google.com/vision/. | **Optional** Required to use Tundra's OCR tools. |
 
 ## Database Configuration
 

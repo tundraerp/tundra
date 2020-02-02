@@ -98,7 +98,7 @@ You will need to fill in your API keys and credentials into these (9) documents 
   - ```YOUR_PATH_TO_SSL_CERTIFICATE_PEM_FILE``` - The path from the root of your TundraERP application to your SSL .pem file
   - ```YOUR_JWT_TOKEN_SECRET``` - this is a random and unique alphanumeric string. you should generate and safe keep your own JWT token secret to be used in your application -- feel free to grab a random ```63 random alpha-numeric characters (a-z, A-Z, 0-9)``` from this website: https://www.grc.com/passwords.htm
   
-```**JSON**```
+**JSON**
 ```
 /* 1 */
 {
@@ -1023,9 +1023,387 @@ You will need to fill in your API keys and credentials into these (9) documents 
 **Your ```extensions``` Collection**:
   - Add these (10) documents to your ```extensions``` collection (no changes are required).
 
+**JSON**
+```
+/* 1 */
+{
+    "periodic_compatibility" : "10.5.91",
+    "periodic_dependencies" : [ 
+        {
+            "version" : "5.0.3",
+            "extname" : "periodicjs.ext.passport"
+        }, 
+        {
+            "version" : "9.0.3",
+            "extname" : "periodicjs.ext.user_access_control"
+        }, 
+        {
+            "version" : "10.5.1",
+            "extname" : "periodicjs.ext.oauth2server"
+        }
+    ],
+    "periodic_type" : 7,
+    "periodic_priority" : 4,
+    "name" : "@tundraerp-tundra/reactapp",
+    "version" : "0.0.4",
+    "author" : {
+        "url" : "http://docs.tundraerp.com",
+        "email" : "info@tundraerp.com",
+        "name" : "TundraERP"
+    },
+    "contributors" : [],
+    "description" : "react based admin.",
+    "source" : "npm",
+    "enabled" : true,
+    "updatedat" : ISODate("2017-12-14T15:39:18.694Z"),
+    "createdat" : ISODate("2017-12-14T15:39:18.694Z"),
+    "__v" : 0
+}
 
+/* 2 */
+{
+    "periodic_compatibility" : "10.6.4",
+    "periodic_dependencies" : [ 
+        {
+            "extname" : "periodicjs.ext.passport",
+            "version" : "5.0.3"
+        }, 
+        {
+            "extname" : "periodicjs.ext.user_access_control",
+            "version" : "9.0.3"
+        }
+    ],
+    "periodic_type" : 5,
+    "periodic_priority" : 30,
+    "name" : "periodicjs.ext.admin",
+    "version" : "10.6.4",
+    "contributors" : [],
+    "description" : "Basic admin extension",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:11:38.780Z"),
+    "updatedat" : ISODate("2019-07-30T14:11:38.780Z"),
+    "__v" : 0
+}
 
-### System Requirements & Required Configurations
+/* 3 */
+{
+    "periodic_compatibility" : "10.0.0",
+    "periodic_dependencies" : [],
+    "periodic_type" : 0,
+    "periodic_priority" : 0,
+    "periodic_config" : {
+        "periodicjs_ext_reactapp" : {
+            "navigation" : "node_modules/periodicjs.ext.dblogger/views/reactapp/components/navigation.manifest.js"
+        },
+        "periodicjs_ext_admin" : {
+            "Database Logs" : [ 
+                {
+                    "link" : "/b-admin/data/dblog_loggers",
+                    "title" : "Application Logger"
+                }
+            ]
+        }
+    },
+    "name" : "periodicjs.ext.dblogger",
+    "version" : "10.6.3",
+    "author" : {
+        "url" : "http://docs.tundraerp.com",
+        "email" : "info@tundraerp.com",
+        "name" : "TundraERP"
+    },
+    "contributors" : [],
+    "description" : "Log errors to database Extension",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:11:45.727Z"),
+    "updatedat" : ISODate("2019-07-30T14:11:45.727Z"),
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "periodic_compatibility" : "10.0.0",
+    "periodic_dependencies" : [],
+    "periodic_type" : 6,
+    "periodic_priority" : 0,
+    "name" : "periodicjs.ext.dbseed",
+    "version" : "10.3.0",
+    "contributors" : [],
+    "description" : "An extension for seeding db with data",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:11:52.734Z"),
+    "updatedat" : ISODate("2019-07-30T14:11:52.734Z"),
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "periodic_compatibility" : "10.0.0",
+    "periodic_dependencies" : [],
+    "periodic_type" : 2,
+    "periodic_priority" : 20,
+    "name" : "periodicjs.ext.oauth2client",
+    "version" : "8.0.0",
+    "author" : {
+        "url" : "http://docs.tundraerp.com",
+        "email" : "info@tundraerp.com",
+        "name" : "TundraERP"
+    },
+    "contributors" : [],
+    "description" : "An authentication extension for periodicjs that uses passport to authenticate user sessions.",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:11:59.641Z"),
+    "updatedat" : ISODate("2019-07-30T14:11:59.641Z"),
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "periodic_compatibility" : "10.5.7",
+    "periodic_dependencies" : [],
+    "periodic_type" : 0,
+    "periodic_priority" : 10,
+    "name" : "periodicjs.ext.packagecloud",
+    "version" : "5.1.0",
+    "contributors" : [],
+    "description" : "upload files to different cloud providers.",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:12:13.118Z"),
+    "updatedat" : ISODate("2019-07-30T14:12:13.118Z"),
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "periodic_compatibility" : "10.5.9",
+    "periodic_dependencies" : [ 
+        {
+            "extname" : "periodicjs.ext.passport",
+            "version" : "1.0.0"
+        }
+    ],
+    "periodic_type" : 3,
+    "periodic_priority" : 10,
+    "periodic_config" : {
+        "periodicjs_ext_reactapp" : {
+            "navigation" : "node_modules/periodicjs.ext.user_access_control/views/reactapp/components/navigation.manifest.js",
+            "manifests" : [ 
+                "node_modules/periodicjs.ext.user_access_control/views/reactapp/manifests/"
+            ]
+        },
+        "periodicjs_ext_admin" : {
+            "User Access Control" : [ 
+                {
+                    "link" : "/b-admin/ext/user_access_control/standard_users",
+                    "title" : "User Access"
+                }, 
+                {
+                    "link" : "/b-admin/ext/user_access_control/standard_accounts",
+                    "title" : "Account Access"
+                }, 
+                {
+                    "link" : "/b-admin/ext/user_access_control/standard_userroles",
+                    "title" : "Manage Roles"
+                }
+            ]
+        }
+    },
+    "name" : "periodicjs.ext.user_access_control",
+    "version" : "10.0.2",
+    "author" : {
+        "url" : "http://docs.tundraerp.com",
+        "email" : "info@tundraerp.com",
+        "name" : "TundraERP"
+    },
+    "contributors" : [],
+    "description" : "A user access control extension for Periodicjs that uses user roles and user privleges to control access",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:12:31.181Z"),
+    "updatedat" : ISODate("2019-07-30T14:12:31.181Z"),
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "periodic_compatibility" : "10.6.0",
+    "periodic_dependencies" : [],
+    "periodic_type" : 2,
+    "periodic_priority" : 1,
+    "periodic_config" : {
+        "periodicjs_ext_reactapp" : {
+            "manifests" : [],
+            "unauthenticated_manifests" : [ 
+                "node_modules/periodicjs.ext.passport/views/reactapp/unauthenticated_manifests"
+            ],
+            "navigation" : "node_modules/periodicjs.ext.passport/views/reactapp/components/navigation.manifest.js"
+        }
+    },
+    "name" : "periodicjs.ext.passport",
+    "version" : "6.1.2",
+    "contributors" : [],
+    "description" : "Passport extension for periodicjs",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:13:37.944Z"),
+    "updatedat" : ISODate("2019-07-30T14:13:37.944Z"),
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "periodic_compatibility" : "10.0.0",
+    "periodic_dependencies" : [ 
+        {
+            "extname" : "periodicjs.ext.passport",
+            "version" : "1.0.0"
+        }
+    ],
+    "periodic_type" : 2,
+    "periodic_priority" : 10,
+    "periodic_config" : {
+        "periodicjs_ext_reactadmin" : {
+            "manifests" : [ 
+                "node_modules/periodicjs.ext.oauth2server/views/reactadmin/manifests"
+            ],
+            "unauthenticated_manifests" : [ 
+                "node_modules/periodicjs.ext.oauth2server/views/reactadmin/unauthenticated_manifests"
+            ],
+            "navigation" : "node_modules/periodicjs.ext.oauth2server/views/reactadmin/components/navigation.manifest.js"
+        }
+    },
+    "name" : "periodicjs.ext.oauth2server",
+    "version" : "10.5.21",
+    "contributors" : [],
+    "description" : "An extension that creates an OAuth 2 Server that uses oauth2orize and http-bearer for server-to-server authenication and jwt-token-bearer for mobile/javascript client based authentication.",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-07-30T14:14:21.010Z"),
+    "updatedat" : ISODate("2019-07-30T14:14:21.010Z"),
+    "__v" : 0
+}
+
+/* 10 */
+{
+    "periodic_compatibility" : "10.5.91",
+    "periodic_dependencies" : [ 
+        {
+            "extname" : "periodicjs.ext.passport",
+            "version" : "5.0.3"
+        }, 
+        {
+            "extname" : "periodicjs.ext.user_access_control",
+            "version" : "9.0.3"
+        }, 
+        {
+            "extname" : "periodicjs.ext.oauth2server",
+            "version" : "10.5.1"
+        }
+    ],
+    "periodic_type" : 7,
+    "periodic_priority" : 5,
+    "name" : "periodicjs.ext.reactapp",
+    "version" : "10.10.0",
+    "author" : {
+        "url" : "http://docs.tundraerp.com",
+        "email" : "info@tundraerp.com",
+        "name" : "TundraERP"
+    },
+    "contributors" : [],
+    "description" : "react based admin.",
+    "source" : "npm",
+    "enabled" : true,
+    "createdat" : ISODate("2019-08-01T13:58:43.984Z"),
+    "updatedat" : ISODate("2019-08-01T13:58:43.984Z"),
+    "__v" : 0
+}
+```
+### Setting up your .env file
+  - Once your configurations and extensions collections are set up with all of the MongoDB documents shown above, create a .env file at the root level of your TundraERP instance.
+  - On application start, the application will read from this environment file to connect to the proper databases and will allow the application to read from those configuration files.
+  - In the .env file, paste the following with your own MongoDB information filled in:
+
+```
+DB_CONFIG={"settings": {"name": "Decision Engine Service", "application": { "environment": "development" }}, "configuration":{"type": "db", "db":"mongoose", "options":{"url":"YOUR_MONGODB_CONFIGURATION_STRING/configuration_local", "mongoose_options":{"replset": { "rs_name": "YOUR_MONGODB_REPLICA_SET_NAME" },"server":{ "keepAlive": 1, "connectTimeoutMS": 30000, "socketTimeoutMS": 30000 }} }}}
+```
+
+### Setting up your /etc/hosts file
+  - Make sure to change all hostnames and urls in the configuration files that reflect ```des-dev.tundraerp.com``` to the hostname that you would like to use to run the app locally.
+  - If you would like to start off just by launching the application locally on our given hostname, add the following line to your /etc/hosts file: ```127.0.0.1 dev.tundraerp.com```
+  - Otherwise, you must add your own hostname to your /etc/hosts file
+  - To access your /etc/hosts file, you can run ```sudo nano /etc/hosts```
+  - It should look something like this:
+```
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting. Do not change this entry.
+##
+127.0.0.1               localhost
+255.255.255.255 broadcasthost
+::1             localhost
+fe80::1%lo0             localhost
+127.0.0.1       dev.tundraerp.com
+```
+
+### Setting up your SSL Certificates
+  - For local development
+  
+You can copy paste the following into your terminal (YOUR_DOMAIN should be the entire domain name you want to use e.g. des-dev.tundraerp.com):
+```
+openssl req \
+    -newkey rsa:2048 \
+    -x509 \
+    -nodes \
+    -keyout server.key \
+    -new \
+    -out server.crt \
+    -subj /CN=YOUR_DOMAIN \
+    -reqexts SAN \
+    -extensions SAN \
+    -config <(cat /System/Library/OpenSSL/openssl.cnf \
+        <(printf '[SAN]\nsubjectAltName=DNS:YOUR_DOMAIN')) \
+    -sha256 \
+    -days 3650
+```
+
+If you do not have an openssl.cnf file in /System/Library/OpenSSL, try running the following command instead (YOUR_DOMAIN should be the entire domain name you want to use e.g. des-dev.tundraerp.com):
+```
+openssl req \
+    -newkey rsa:2048 \
+    -x509 \
+    -nodes \
+    -keyout server.key \
+    -new \
+    -out server.crt \
+    -subj /CN=YOUR_DOMAIN \
+    -reqexts SAN \
+    -extensions SAN \
+    -config <(cat /etc/ssl/openssl.cnf \
+        <(printf '[SAN]\nsubjectAltName=DNS:YOUR_DOMAIN')) \
+    -sha256 \
+    -days 3650
+```
+  - The above script will create a server.key file and a server.crt file.
+  - After you create these files, add the paths to these files (from the root of your Tundra application) to the configuration mongo document.
+  - Then, navigate to "Keychain Access" on your mac and click on your **login** Keychain.
+  - Copy over your server.crt file to your **login** keychain (you can drag it in)
+  - Double click on the file that is added
+  - Click the arrow next to "Trust"
+  - In the section that says "When using this certificate", change the dropdown to "Always Trust".
+  - Restart chrome
+  
+### Signing into the Platform
+  - Once all of your configuration files, extension files, ssl (pem and key files), and .env file is set up, ```run npm start development``` and access ```https://YOUR_HOST_NAME:YOUR_PORT_NUMBER``` access the main platform. (e.g. if using our hostname and url, you can navigate to https://des-dev.tundraerp.com:8788)
+  
+  
+
+## System Requirements & Required Configurations
 
 Before you can install and run TundraERP's open source platform, you must have set up certain required servers, databases and 3rd-party programs as well added the proper configuration documents to your database. For full details regarding this configuration process, please review the above two sections **System Requirements** and **Database Configuration**.
 

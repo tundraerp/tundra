@@ -85,6 +85,7 @@ Find your ```configuration_local``` database and follow the instructions below.
 ### Configuration Documents
 
 **Your ```configurations``` Collection**:
+
 You will need to fill in your API keys and credentials into these (9) documents and then add them to your ```configurations``` collection.
 
 **Essential Keys**:

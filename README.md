@@ -51,7 +51,17 @@ The following 3rd-party software is required to run TundraERP.
   For easier insertion of the MongoDB documents discussed below, you can optionally install Robo3T: https://robomongo.org/ and connect to your clusters through the Robo3T application.
 
 ### Connecting through Robo3T (After your MongoAtlas cluster is set up) - Highly Recommended
-
+  - After you install the Robo3T client, open up your client and click on the connections (two monitors) icon
+  - Click on "Create"
+ 
+**Connection Tab**
+  - Type: Replica Set
+  - Name: Any name you would like to use to identify your cluster (e.g. TUNDRA-DEV MongoAtlas)
+  - Members: (there should be 3)
+    - Navigate to your MongoAtlas Cluster (on the MongoAtlas web interface), and click on your cluster name
+    - There should be 3 shard names (e.g. cluster0-shard-00-00-abc123.mongodb.net:27017)
+    - Add each of these to the Members section
+  - Set Name (Case-sensitive and Required): YOURCLUSTERNAME-shard-0 (e.g. Cluster0-shard-0)
 
 ### System Requirements & Required Configurations
 

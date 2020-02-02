@@ -1464,6 +1464,11 @@ TundraERP provides three installation options:
   - Run ```git clone {YOUR_CLONE_URL}``` into a folder where you would like to install TundraERP's System
   - Run ```npm i && npm i periodicjs.ext.passport --save && npm i periodicjs.ext.oauth2server@10.5.21 --save``` at the directory root level
 
+### Using TundraERP's CLI
+  - You can install TundraERP's command line interface ("CLI") by running ```npm i @tundraerp/tundra-cli -g```
+  - After the tool is installed, run ```tundra-cli -i``` into any folder
+    - This will install the TundraERP System locally into that directory
+
 
 ## License
 

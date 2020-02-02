@@ -61,7 +61,26 @@ The following 3rd-party software is required to run TundraERP.
     - Navigate to your MongoAtlas Cluster (on the MongoAtlas web interface), and click on your cluster name
     - There should be 3 shard names (e.g. cluster0-shard-00-00-abc123.mongodb.net:27017)
     - Add each of these to the Members section
-  - Set Name (Case-sensitive and Required): YOURCLUSTERNAME-shard-0 (e.g. Cluster0-shard-0)
+  - Set Name **(Case-sensitive and Required)**: YOURCLUSTERNAME-shard-0 (e.g. Cluster0-shard-0)
+  
+**Authentication Tab**
+  - Perform authentication: check this box
+  - Database: admin
+  - User Name:
+    - Navigate to your MongoAtlas Cluster (on the MongoAtlas web interface), and click on **Database Access**
+    - Find a user that has atlasAdmin OR readWriteAnyDatabase privileges
+  - Password: The password associated with the username
+  - Auth Mechanism: SCRAM-SHA-1
+  
+**SSL Tab**
+  - Use SSL protocol: check this box
+  - Authentication Method: Self-signed Certificate
+  
+After setting the above tabs up, hit Test and your instance should indicate a proper connection with two green checkmarks. If the database does not connect, make sure that you've whitelisted your own IP address in your MongoAtlas Cluster (Network Access) and try again.
+
+Click Save, and your cluster should appear in the list of connections. You should now be able to connect to your MongoAtlas cluster.
+
+Find your ```configuration_local``` database and follow the instructions below.
 
 ### System Requirements & Required Configurations
 

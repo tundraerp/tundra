@@ -44,7 +44,7 @@ The following 3rd-party software is required to run TundraERP.
   - The extensions collection will hold multiple MongoDB documents that reference the extensions installed as a part of the application process.
   - All of your organization's keys and credentials will be stored in the configurations collection. The extensions documents will be more boilerplate.
 
-  > Tip!
+  > **Tip!**
   For easier insertion of the MongoDB documents discussed below, you can optionally install Robo3T: https://robomongo.org/ and connect to your clusters through the Robo3T application.
 
 ### Connecting through Robo3T (After your MongoAtlas cluster is set up) - Highly Recommended
@@ -56,6 +56,6 @@ Before you can install and run TundraERP's open source platform, you must have s
 
 
 
-# License
+## License
 
 [MIT](LICENSE)

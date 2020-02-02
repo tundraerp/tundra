@@ -1,4 +1,4 @@
-![TundraERP Logo](https://github.com/tundraerp/tundra/tree/master/public/images/logo.png)
+![TundraERP Logo](public/images/logo.png)
 
 # TundraERP - A Modern ERP System with AI
 We provide a comprehensive platform built as modular components, empowering businesses to quickly deploy business solutions across a wide range of business verticals, including Manufacturing, CRM, Project Management, HR, Marketing and many more. We also introduce AI and machine learning capabilities wherever possible via AWS Sagemaker and AWS ML.

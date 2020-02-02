@@ -97,7 +97,7 @@ You will need to fill in your API keys and credentials into these (9) documents 
   - ```YOUR_PATH_TO_SSL_CERTIFICATE_PEM_FILE``` - The path from the root of your TundraERP application to your SSL .pem file
   - ```YOUR_JWT_TOKEN_SECRET``` - this is a random and unique alphanumeric string. you should generate and safe keep your own JWT token secret to be used in your application -- feel free to grab a random ```63 random alpha-numeric characters (a-z, A-Z, 0-9)``` from this website: https://www.grc.com/passwords.htm
   
-**JSON**
+```**JSON**```
 ```
 /* 1 */
 {
@@ -1018,6 +1018,9 @@ You will need to fill in your API keys and credentials into these (9) documents 
     "__v" : 0
 }
 ```
+
+**Your ```extensions``` Collection**:
+  - Add these (10) documents to your ```extensions``` collection (no changes are required).
 
 
 

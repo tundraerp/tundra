@@ -24,6 +24,7 @@ The following 3rd-party software is required to run TundraERP.
 |-----------------|-----------------------|------------|
 | MongoDB         | MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. For more information visit https://www.mongodb.com/. | Yes |
 | Redis           | Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information visit https://redis.io/. | Yes |
+| Amazon s3       | Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. For more information visit https://aws.amazon.com/s3/. | Yes Required for standard cloud deployments. Other options are available for on-premise installations. |
 
 ## Database Configuration
 

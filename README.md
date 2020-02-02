@@ -1,7 +1,7 @@
 ![TundraERP Logo](public/images/logo.png)
 
 # TundraERP - A Modern ERP System with AI
-We provide a comprehensive platform built as modular components, empowering businesses to quickly deploy business solutions across a wide range of business verticals, including Manufacturing, CRM, Project Management, HR, Marketing and many more. We also introduce AI and machine learning capabilities wherever possible via AWS Sagemaker and AWS ML.
+We provide a comprehensive platform built as modular components, empowering businesses to quickly deploy business solutions across a wide range of business verticals, including Manufacturing, CRM, Project Management, HR, Marketing and many more. We also introduce AI and machine learning capabilities wherever possible via AWS Sagemaker, AWS ML and Google Cloud Vision.
 
 ## Installation Guide
 
@@ -23,22 +23,9 @@ An internet browser is required to use TundraERP's web user interfaces. TundraER
 
 ### Required 3rd-Party Software
 The following 3rd-party software is required to run TundraERP.
-  - MongoDB (*Required*)
-    - MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. For more information visit https://www.mongodb.com/.
-  - Redis (*Required*)
-    - Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information visit https://redis.io/.
-  - Amazon S3 (*Required - Required for standard cloud deployments. Other options are available for on-premise installations.*)
-    - Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. For more information visit https://aws.amazon.com/s3/.
-  - Twilio (*Optional - Required for 2-factor phone authentication.*)
-    - Twilio enables programmatic phone calls and text messages. For more information visit https://www.twilio.com/.
-  - Amazon SES (*Optional - Required for system emails.*)
-    - Amazon SES enables programmatic email sending. For more information visit https://aws.amazon.com/ses/.
-  - Amazon Sagemaker (*Optional - Amazon Machine Learning is required to use some of Tundra's machine learning capabilities.*)
-    - Amazon SageMaker is a fully-managed service that covers the entire machine learning workflow to label and prepare your data, choose an algorithm, train the model, tune and optimize it for deployment, make predictions, and take action. For more information visit https://aws.amazon.com/sagemaker/.
-  - Amazon ML (*Optional - Amazon Machine Learning is required to use some of Tundra's machine learning capabilities.*)
-    - Amazon Machine Learning (Amazon ML) is a robust, cloud-based service that makes it easy for developers of all skill levels to use machine learning technology. For more information visit https://aws.amazon.com/machine-learning/
-  - Google Cloud Vision (*Optional - Required to use Tundra's OCR tools.*)
-    - Google Cloud offers computer vision products that use machine learning to help you understand your images with industry-leading prediction accuracy. For more information visit https://cloud.google.com/vision/.
+| Software        | Description           | Required?  |
+| --------------- |:---------------------:| ----------:|
+| MongoDB         | MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. For more information visit https://www.mongodb.com/. | Yes |
 
 ## Database Configuration
 

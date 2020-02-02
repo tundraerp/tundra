@@ -1354,7 +1354,7 @@ fe80::1%lo0             localhost
 ### Setting up your SSL Certificates
   - For local development
   
-You can copy paste the following into your terminal (YOUR_DOMAIN should be the entire domain name you want to use e.g. des-dev.tundraerp.com):
+You can copy paste the following into your terminal (**YOUR_DOMAIN** should be the entire domain name you want to use e.g. des-dev.tundraerp.com):
 ```
 openssl req \
     -newkey rsa:2048 \
@@ -1372,7 +1372,7 @@ openssl req \
     -days 3650
 ```
 
-If you do not have an openssl.cnf file in /System/Library/OpenSSL, try running the following command instead (YOUR_DOMAIN should be the entire domain name you want to use e.g. des-dev.tundraerp.com):
+If you do not have an openssl.cnf file in /System/Library/OpenSSL, try running the following command instead (**YOUR_DOMAIN** should be the entire domain name you want to use e.g. des-dev.tundraerp.com):
 ```
 openssl req \
     -newkey rsa:2048 \
@@ -1401,7 +1401,42 @@ openssl req \
 ### Signing into the Platform
   - Once all of your configuration files, extension files, ssl (pem and key files), and .env file is set up, ```run npm start development``` and access ```https://YOUR_HOST_NAME:YOUR_PORT_NUMBER``` access the main platform. (e.g. if using our hostname and url, you can navigate to https://des-dev.tundraerp.com:8788)
   
-  
+**For example:**
+
+Run ```npm start development``` and navigate to https://des-dev.tundraerp.com:8788 
+  - If you are able to access the main login page of the application, your ```periodic_local``` database should be updated with all of the relevant mongo collections.
+  - In order to create an organization or login, check the ```clients``` collection in your ```periodic_local``` database. There should be one client document that has a ```name``` of ```reactapp``` as shown below.
+  - Take the ```client_id``` and update all of your configuration files where it says ```YOUR_REACTAPP_CLIENT_ID``` with this value.
+  - Take the ```client_secret``` and update all of your configuration files where it says ```YOUR_REACTAPP_CLIENT_SECRET``` with this value.
+  - You should then be able to create an account with a new organization and login!
+
+**JSON**
+```
+{
+    "random" : RANDOM_NUMBER_BETWEEN_0_AND_1,
+    "title" : "reactapp",
+    "name" : "reactapp",
+    "client_id" : YOUR_REACTAPP_CLIENT_ID,
+    "client_secret" : YOUR_REACTAPP_CLIENT_SECRET,
+    "updatedat" : ISODate("2019-07-17T22:43:44.651Z"),
+    "createdat" : ISODate("2019-07-17T22:43:44.651Z"),
+    "entitytype" : "client",
+    "api_settings" : {
+        "sendAcknowledgement" : false,
+        "acknowledgementType" : null,
+        "responseType" : "application/json"
+    },
+    "rate_limit" : {
+        "delayMs" : 0,
+        "max" : -1
+    },
+    "ip_addresses" : null,
+    "user_entity_type" : "user",
+    "__v" : 0
+}
+```
+
+
 
 ## System Requirements & Required Configurations
 

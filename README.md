@@ -3,10 +3,6 @@
 # TundraERP - A Modern ERP System with AI
 We provide a comprehensive platform built as modular components, empowering businesses to quickly deploy business solutions across a wide range of business verticals, including Manufacturing, CRM, Project Management, HR, Marketing and many more. We also introduce AI and machine learning capabilities wherever possible via AWS Sagemaker, AWS ML and Google Cloud Vision.
 
-## Installation Guide
-
-At a minimum, we recommend the following for compatibility with TundraERP.
-
 ## System Requirements
 
 ### Operating System Requirements
@@ -27,7 +23,7 @@ The following 3rd-party software is required to run TundraERP.
 | Software        | Description           | Required?  |
 |-----------------|-----------------------|------------|
 | MongoDB         | MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. For more information visit https://www.mongodb.com/. | Yes |
-
+| Redis           | Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. For more information visit https://redis.io/. | Yes |
 
 ## Database Configuration
 

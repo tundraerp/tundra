@@ -82,9 +82,24 @@ Click Save, and your cluster should appear in the list of connections. You shoul
 
 Find your ```configuration_local``` database and follow the instructions below.
 
+### Configuration Documents
+
+**Your ```configurations``` Collection**:
+You will need to fill in your API keys and credentials into these (9) documents and then add them to your ```configurations``` collection.
+
+**Essential Keys**:
+  - ```YOUR_MONGODB_CONNECTION_STRING``` - this value can be found in your MongoAtlas cluster when you hit ```Connect```. This string ends in ```.net``` (e.g. mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@SHARDNAME.mongodb.net)
+  - ```YOUR_MONGODB_REPLICA_SET_NAME``` - this value is the name of your MongoAtlas Cluster (case-sensitive) followed by -```shard-0```. (e.g. if the name of my cluster is Tundra, the replica set name would be ```Tundra-shard-0```)
+  - ```YOUR_REDIS_HOST``` - The hostname given when you create a Redis account (for localhost, just set it to ```"127.0.0.1"```)
+  - ```YOUR_REDIS_PORT``` - The port of your Redis account (usually 6379)
+  - ```YOUR_REDIS_PASSWORD``` - Your Redis password (if you have one)
+  - ```YOUR_PATH_TO_SSL_PRIVATE_KEY``` - The path from the root of your TundraERP application to your SSL private key
+  - ```YOUR_PATH_TO_SSL_CERTIFICATE_PEM_FILE``` - The path from the root of your TundraERP application to your SSL .pem file
+  - ```YOUR_JWT_TOKEN_SECRET``` - this is a random and unique alphanumeric string. you should generate and safe keep your own JWT token secret to be used in your application -- feel free to grab a random ```63 random alpha-numeric characters (a-z, A-Z, 0-9)``` from this website: https://www.grc.com/passwords.htm
+
 ### System Requirements & Required Configurations
 
-Before you can install and run TundraERP's open source platform, you must have set up certain required servers, databases and 3rd-party programs as well added the proper configuration documents to your database. For full details regarding this configuration process, please visit the System Requirements and Database Configuration sections and return to this installation guide afterwards.
+Before you can install and run TundraERP's open source platform, you must have set up certain required servers, databases and 3rd-party programs as well added the proper configuration documents to your database. For full details regarding this configuration process, please review the above two sections **System Requirements** and **Database Configuration**.
 
 
 
